@@ -11,7 +11,6 @@ body {
   font-weight: 700;
   font-style: normal;
   font-size: 35px !important ;
-
 }
 
 .navbar-dark {
@@ -19,11 +18,17 @@ body {
 }
 
 .navbar-brand{
-  font-size: 40px !important ;
+  font-size: 40px !important;
 }
 
+.navbar-nav:nth-child(2){
+  color: #F65B5B;
+}
 .slideshow-container {
   margin-top:15%;
+}
+.slideshow-container .col-sm-1{
+  margin:auto;
 }
 
 /* Hide the images by default */
@@ -31,16 +36,26 @@ body {
   display: none;
 }
 
+.mySlides img{
+  width: 100%;
+}
+
 /* Next & previous buttons */
 .prev, .next {
   color: white;
   transition: 0.6s ease;
   user-select: none;
+  height: 80px;
+  width: 80px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.5);
+}
+
+.dot_container{
+ text-align:center;
 }
 
 /* The dots/bullets/indicators */
@@ -59,6 +74,3 @@ body {
   background-color: #888888;
 }
 
-.slideshow-container .col-sm-1{
-  margin:auto;
-}

@@ -7,10 +7,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-
     <link rel = "stylesheet" href = "node_modules/font-awesome/css/font-awesome.min.css">
     <link rel = "stylesheet" href = "node_modules/bootstrap-social/css/bootstrap-social.css">
     <link rel = "stylesheet" href = "css/style.css">
@@ -26,9 +24,9 @@
             </button>
             <a class = "navbar-brand mr-auto" href = "#"><img src="img/logo_game.png" height = "60" width="60"> Wolley</a>
             <div class = "collapse navbar-collapse" id = "Navbar">
-                <ul class = "navbar-nav ml-auto "> <!--mr-auto use to specify right margin-->
+                <ul class = "navbar-nav ml-auto"> <!--ml-auto use to specify left margin-->
                     <li class = "nav-item nav-active"><a class ="nav-link" href = "#">HOME</a></li>
-                    <li class = "nav-item"><a class ="nav-link" style = "color: #F65B5B" href = "./download.html">DOWNLOAD</a></li>
+                    <li class = "nav-item"><a class ="nav-link" href = "./download.html">DOWNLOAD</a></li>
                     <li class = "nav-item"><a class ="nav-link" href = "./aboutus.html">ABOUT US</a></li>
                 </ul>
             </div>
@@ -38,35 +36,39 @@
     <!-- Slideshow container -->
     <div class="container"> 
     <div class="slideshow-container row">
-      <!-- Full-width images with number and caption text -->
-      <a class="col-sm-1" onclick="plusSlides(-1)"><img class = "prev" src="img/button_slide_left.png" height = "80" width="80"></a>
+      <!-- left button that allow the slide to move to the left -->
+      <a class="col-sm-1" onclick="plusSlides(-1)">
+        <img class = "prev" src="img/button_slide_left.png">
+      </a>
+      
+      <!--note the image should be changing to media in order to enable video playing-->
       <div class="col-sm-10 mySlides">
-        <img src="img/slide1.png" style="width:100%">
+        <img src="img/slide1.png">
       </div>
-
       <div class="col-sm-10 mySlides fade">
-        <img src="img/slide2.png" style="width:100%">
+        <img src="img/slide2.png">
       </div>
-
       <div class="col-sm-10 mySlides fade">
-        <img src="img/slide3.png" style="width:100%">
+        <img src="img/slide3.png">
       </div>
 
-      <a class="col-sm-1" onclick="plusSlides(1)"><img class = "next"src="img/button_slide_right.png" height = "80" width="80"></a>
+      <!--right button that allow the slide to move to the right-->
+      <a class="col-sm-1" onclick="plusSlides(1)">
+        <img class = "next" src="img/button_slide_right.png">
+      </a>
     </div>
-    <br>
-
     <!-- The dots/circles -->
-    <div style="text-align:center">
+    <div class="dot_container">
       <span class="dot" onclick="currentSlide(1)"></span> 
       <span class="dot" onclick="currentSlide(2)"></span> 
       <span class="dot" onclick="currentSlide(3)"></span> 
     </div>
+
+    <!-- download button -->
     <div class="row">
     </div> 
 
-
-
+    <!-- footer -->
     <footer class = "container footer">
         
     </footer>
