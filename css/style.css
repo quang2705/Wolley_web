@@ -1,15 +1,23 @@
 *{box-sizing:border-box}
 
 body {
-	background-image: url(../img/background.png);
+	background:linear-gradient(
+              rgba(0, 0, 0, 0.25), 
+              rgba(0, 0, 0, 0.25)
+              ), 
+              url(../img/background.png);
 }
 
 .navbar-dark {
 	background-color: #2B2B2B;
 }
 
+.word_style{
+  font-family: clone-rounded-latin,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
 .slideshow-container {
-  max-width: 1000px;
   margin-top:15%;
 }
 
@@ -20,27 +28,15 @@ body {
 
 /* Next & previous buttons */
 .prev, .next {
-  cursor: pointer;
-  top: 50%;
-  width: auto;
   color: white;
-  font-weight: bold;
-  font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
   user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.5);
 }
-
 
 /* The dots/bullets/indicators */
 .dot {
@@ -48,12 +44,16 @@ body {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #FFFFFF;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #888888;
+}
+
+.slideshow-container .col-sm-1{
+  margin:auto;
 }

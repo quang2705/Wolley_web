@@ -14,6 +14,7 @@
     <link rel = "stylesheet" href = "node_modules/font-awesome/css/font-awesome.min.css">
     <link rel = "stylesheet" href = "node_modules/bootstrap-social/css/bootstrap-social.css">
     <link rel = "stylesheet" href = "css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jro3nns.css">
     <title>Wolley</title>
 </head>
 
@@ -21,14 +22,14 @@
     <nav class = "navbar navbar-dark navbar-expand-sm fixed-top">
         <div class = "container">
             <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#Navbar">
-                <span class = "navbar-toggler-icon"> </span>
+                <span class = "navbar-toggler-icon"></span>
             </button>
-            <a class = "navbar-brand mr-auto" href = "#"><img src="img/logo_game.png" height = "30" width="30"></a>
+            <a class = "navbar-brand mr-auto" href = "#"><img src="img/logo_game.png" height = "30" width="30"> Wolley</a>
             <div class = "collapse navbar-collapse" id = "Navbar">
-                <ul class = "navbar-nav mr-auto"> <!--mr-auto use to specify right margin-->
-                    <li class = "nav-item nav-active"><a class ="nav-link" href = "#"><span class = ""></span>Home</a></li>
-                    <li class = "nav-item"><a class ="nav-link" href = "./download.html"> <span class = ""></span>Download</a></li>
-                    <li class = "nav-item"><a class ="nav-link" href = "./aboutus.html"><span class = ""></span>About Us</a></li>
+                <ul class = "navbar-nav ml-auto "> <!--mr-auto use to specify right margin-->
+                    <li class = "nav-item nav-active"><a class ="nav-link" href = "#"><span class = "word_style"></span>Home</a></li>
+                    <li class = "nav-item"><a class ="nav-link" href = "./download.html"> <span class = "word_style"></span>Download</a></li>
+                    <li class = "nav-item"><a class ="nav-link" href = "./aboutus.html"><span class = "word_style"></span>About Us</a></li>
                 </ul>
             </div>
         </div>
@@ -38,8 +39,7 @@
     <div class="container"> 
     <div class="slideshow-container row">
       <!-- Full-width images with number and caption text -->
-      <a class="col-sm-1" onclick="plusSlides(-1)"><img src="img/button_slide_left.png" height = "30" width="30"></a>
-
+      <a class="col-sm-1" onclick="plusSlides(-1)"><img class = "prev" src="img/button_slide_left.png" height = "80" width="80"></a>
       <div class="col-sm-10 mySlides">
         <img src="img/slide1.png" style="width:100%">
       </div>
@@ -52,7 +52,7 @@
         <img src="img/slide3.png" style="width:100%">
       </div>
 
-      <a class="col-sm-1" onclick="plusSlides(1)"><img src="img/button_slide_right.png" height = "30" width="30"></a>
+      <a class="col-sm-1" onclick="plusSlides(1)"><img class = "next"src="img/button_slide_right.png" height = "80" width="80"></a>
     </div>
     <br>
 
