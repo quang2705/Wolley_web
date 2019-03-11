@@ -13,6 +13,7 @@ body {
   font-size: 35px !important ;
 }
 
+/*navigation bar*/
 .navbar-dark {
 	background-color: #2B2B2B;
 }
@@ -21,9 +22,11 @@ body {
   font-size: 40px !important;
 }
 
-.navbar-nav:nth-child(2){
+#download{
   color: #F65B5B;
 }
+
+/*slideshow*/
 .slideshow-container {
   margin-top:15%;
 }
@@ -72,5 +75,24 @@ body {
 
 .active, .dot:hover {
   background-color: #888888;
+}
+
+.btn {
+  background-image :linear-gradient(
+              #FFFF80 0%,
+              #F1C868 40%,
+              #EF7E53 80%,
+              #D84F1B 100%
+              )!important;
+  border: none;
+  font-weight: 700 !important;
+  margin:auto;
+
+}
+
+button::after,button::before , button:active{
+  outline:0 !important;
+  border: none !important;
+
 }
 
